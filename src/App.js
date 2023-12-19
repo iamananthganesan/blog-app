@@ -9,7 +9,7 @@ import {
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Single from './pages/Single';
+import SinglePost from './pages/SinglePost';
 import Write from './pages/Write';
 //import Header from './components/Header';
 import Footer from './components/Footer';
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/single',
-        element: <Single />
+        path: '/post/:id',
+        element: <SinglePost />
       },
       {
         path: '/write',

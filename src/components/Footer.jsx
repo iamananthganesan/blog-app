@@ -1,10 +1,11 @@
 import React from 'react'
-
+import './Footer.scss'
 const Footer = () => {
   return (
-    <div>
-      Footer
-    </div>
+    <footer>
+      <span className='logoArea'>LogoArea</span>
+      <span className='copyrights'> Copyrights all rights reserved Designed by Senthil Anand </span>
+    </footer>
   )
 }
 

@@ -1,0 +1,43 @@
+.menuBar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 15px;
+    h2{
+        font-size: 22px;
+    }
+    .post-suggestions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        figure {
+            margin: 0%;
+            img {
+                width: 100%
+            }
+        }
+        button {
+            background-color: transparent;
+            border: 1px solid lightseagreen;
+            padding: 10px 15px;
+            color: teal;
+            cursor: pointer;
+            &:hover{
+                background-color: teal;
+                color: #fff;
+            }
+        }
+    }
+
+    .content {
+        h2 {
+            font-size: 20px;
+            color: #555;
+        }
+
+        p {
+            text-align: justify;
+        }    
+    }
+}
