@@ -1,11 +1,17 @@
 import React from 'react'
 
-const Write = () => {
+const CreateBlog = () => {
   return (
-    <div>
-      write
+    <div className='createBlog'>
+      <div className='content'>
+      </div>
+      <div className='menu'>
+        <div className='item'>
+
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Write
+export default CreateBlog
