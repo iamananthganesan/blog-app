@@ -33,7 +33,7 @@ const Navbar = () => {
                     </Link>
                     <span>Logged user</span>
                     <span>Logout</span>
-                    <Link to='/write' className='write'>Write</Link>
+                    <Link to='/create' className='write'>Write</Link>
                 </div>
             </div>
         </div>

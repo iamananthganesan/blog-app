@@ -4,7 +4,12 @@ import { FaEdit } from "react-icons/fa";
 import { FaRegTrashCan } from "react-icons/fa6";
 import MenuBar from '../components/MenuBar'
 const SinglePost = () => {
-
+const handleEditBlog = () =>{
+  console.log('edit blog');
+}
+const handleBlogDelete = () =>{
+  console.log('Delete blog');
+}
   return (
     <div className='singlePost-wrapper'>
       <div className='content'>
@@ -20,7 +25,7 @@ const SinglePost = () => {
             <p>Posted a day ago</p>
           </div>
           <div className='controls'>
-            <FaEdit /> <FaRegTrashCan/>
+            <FaEdit onClick={handleEditBlog} /> <FaRegTrashCan onClick={handleBlogDelete}/>
           </div>
         </div>
         <div className='postDes'>

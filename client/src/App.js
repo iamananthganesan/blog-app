@@ -10,7 +10,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import SinglePost from './pages/SinglePost';
-import Write from './pages/Write';
+import CreateBlog from './pages/CreateBlog';
 //import Header from './components/Header';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -39,8 +39,8 @@ const router = createBrowserRouter([
         element: <SinglePost />
       },
       {
-        path: '/write',
-        element: <Write />
+        path: '/create',
+        element: <CreateBlog />
       }
     ]
   },
