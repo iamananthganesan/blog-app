@@ -14,11 +14,11 @@ const handleBlogDelete = () =>{
     <div className='singlePost-wrapper'>
       <div className='content'>
         <figure>
-          <img src='https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+          <img alt='' src='https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
         </figure>
         <div className='user-details'>
           <figure>
-            <img src='https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
+            <img alt='' src='https://images.pexels.com/photos/7008010/pexels-photo-7008010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' />
           </figure>
           <div className='user-info'>
             <span>Senthil Anand</span>

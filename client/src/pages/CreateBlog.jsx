@@ -3,7 +3,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import './CreateBlog.scss'
 const CreateBlog = () => {
-const [blogTitle, setBlogTitle] = useState()
+  const [blogTitle, setBlogTitle] = useState()
   const [blogDesc, setBlogDesc] = useState('');
 
   return (
@@ -11,12 +11,12 @@ const [blogTitle, setBlogTitle] = useState()
       <div className='content'>
         <input type='text' onChange={(e) => { setBlogTitle(e.target.value) }} value={blogTitle} placeholder='Title' />
         <div className='editorContainer'>
-        <ReactQuill className='editor' theme="snow" value={blogDesc} onChange={setBlogDesc} />
+          <ReactQuill className='editor' theme="snow" value={blogDesc} onChange={setBlogDesc} />
         </div>
       </div>
       <div className='menu'>
         <div className='item'>
-          <h3>Publish</h3> 
+          <h3>Publish</h3>
           <span><strong>Status</strong>: Draft</span>
           <span><strong>Visibility</strong>: Public</span>
           <input type='file' id='file' />

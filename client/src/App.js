@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import './style.scss'
 import {
@@ -58,7 +57,6 @@ const router = createBrowserRouter([
 function App() {
   //use state is a hook, which controls the behaviour of its component 
 
-  const [name, setName] = useState('');
   return (
     <div className='app'>
       <div className='container'>
