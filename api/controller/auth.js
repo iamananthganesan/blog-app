@@ -6,7 +6,7 @@ export const register = (req, res) => {
     //Check with exisiting user or not 
 
     const query = "SELECT * FROM users WHERE email = ? OR username = ?"
-    database.query(query, [req.body.username, req.body.email, req.body.password], (error, data) => {
+    database.query(query, [req.body.username, req.body.email], (error, data) => {
         if (error) return res.json(error)
         if (data.length) {
             return res.status(409).json("User already exist")
@@ -29,7 +29,7 @@ export const register = (req, res) => {
         const values = [
             req.body.username,
             req.body.email,
-            hash
+            hash//hashed password
         ]
 
         database.query(query, values, (error, data) => {
@@ -47,7 +47,7 @@ export const logout = (req, res) => {
     res.json("logout")
 }
 
-
+//to retrive the list of users been created
 export const getUserLists = (req,res) =>{
     const query = " SELECT * FROM users"
 
